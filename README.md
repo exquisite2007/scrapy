@@ -52,6 +52,6 @@ class BooheeItem(scrapy.Item):
 scrapy crawl boohee
 ```
 
-[1].https://virtualenv.pypa.io/en/stable/
+[1].https://virtualenv.pypa.io/en/stable/   
 [2].https://doc.scrapy.org/en/latest/index.html
 
