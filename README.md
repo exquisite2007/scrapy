@@ -35,7 +35,7 @@ class BooheeSpider(scrapy.Spider):
 		for food in foods:
 			name=food.css('a::text')[0].extract()
 			value=food.css('p::text').re(r'(\d+)')[0]
-			yield Product({'name':name,'value':value})
+			yield BooheeItem({'name':name,'value':value})
 		next_page=response.css('a.next_page::attr(href)').extract_first()
 		if next_page is not None:
 			next_page = response.urljoin(next_page)
@@ -45,13 +45,19 @@ class BooheeSpider(scrapy.Spider):
 ```
 class BooheeItem(scrapy.Item):
     name = scrapy.Field()
-	value = scrapy.Field()
+    value = scrapy.Field()
 ```
 6.运行
 ```
 scrapy crawl boohee
-```
-
+``
+  
+  
+  
+  
+  
+  
+    
 [1].https://virtualenv.pypa.io/en/stable/   
 [2].https://doc.scrapy.org/en/latest/index.html
 
