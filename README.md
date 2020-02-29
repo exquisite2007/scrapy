@@ -50,10 +50,12 @@ class BooheeItem(scrapy.Item):
 6.运行
 ```
 scrapy crawl boohee
-``
+```
+
 7.其它网站
 ```
 增加水木社区爬虫scrapy newsmth
+
 增加新闻爬虫scrapy news
 
 ```  
