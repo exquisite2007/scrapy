@@ -51,7 +51,12 @@ class BooheeItem(scrapy.Item):
 ```
 scrapy crawl boohee
 ``
-  
+7.其它网站
+```
+增加水木社区爬虫scrapy newsmth
+增加新闻爬虫scrapy news
+
+```  
   
   
   
